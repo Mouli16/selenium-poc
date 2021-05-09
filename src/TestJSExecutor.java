@@ -16,7 +16,7 @@ public class TestJSExecutor {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mouli Sarkar\\Documents\\Selenium\\ChromeDriver\\chromedriver.exe");
         WebDriver driver=new ChromeDriver();
-        driver.get("rahulshettyacademy.com/AutomationPractise/");
+        driver.get("https://rahulshettyacademy.com/AutomationPractice/");
         JavascriptExecutor js = (JavascriptExecutor)driver;
         js.executeScript("window.scrollBy(0,500)");
         Thread.sleep(3000);
