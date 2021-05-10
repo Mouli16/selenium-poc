@@ -14,7 +14,7 @@ public class Demo {
 		WebDriver driver = new ChromeDriver();
 
 		// driver.get("http://facebook.com");
-		// driver.findElement(By.id("email")).sendKeys("sarkarmouli92@gmail.com");
+		// driver.findElement(By.id("email")).sendKeys("abc@gmail.com");
 		// driver.close();
 
 		driver.get("https://www.guru99.com/software-testing.html");

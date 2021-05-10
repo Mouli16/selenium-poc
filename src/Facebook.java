@@ -11,11 +11,11 @@ public class Facebook {
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mouli Sarkar\\Documents\\Selenium\\ChromeDriver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		// driver.get("http://facebook.com");
-		// driver.findElement(By.id("email")).sendKeys("sarkarmouli92@gmail.com");
-		// driver.findElement(By.name("pass")).sendKeys(" PratyayS ");
+		// driver.findElement(By.id("email")).sendKeys("abc@gmail.com");
+		// driver.findElement(By.name("pass")).sendKeys("$%^&*");
 
-		// driver.findElement(By.cssSelector("#email")).sendKeys("sarkarmouli92@gmail.com");
-		// driver.findElement(By.xpath("//*[@id=\'pass\']")).sendKeys(" PratyayS ");
+		// driver.findElement(By.cssSelector("#email")).sendKeys("abc@gmail.com");
+		// driver.findElement(By.xpath("//*[@id=\'pass\']")).sendKeys("%^&*(");
 		// driver.findElement(By.xpath("//*[@id='u_0_b']")).click();
 
 		/*
