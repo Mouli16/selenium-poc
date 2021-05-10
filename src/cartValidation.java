@@ -64,7 +64,7 @@ public class cartValidation {
 	    w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
 	    String text= driver.findElement(By.cssSelector("span.promoInfo")).getText();
 	   System.out.println(text);
-	    
+	   driver.close(); 
 	   
 		}
 		
