@@ -1,3 +1,5 @@
+
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -8,10 +10,12 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-public class Scope
-{
 
-	public static void main(String[] args) throws InterruptedException
+public class Scope 
+{ 
+	public static WebDriver driver;
+
+	public static void main(String[] args) throws InterruptedException, IOException
 	{
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mouli Sarkar\\Documents\\Selenium\\ChromeDriver\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
