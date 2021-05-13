@@ -35,7 +35,7 @@ public static void main(String[] args) throws InterruptedException, IOException 
 String downloadPath=System.getProperty("user.dir");
 
 System.setProperty("webdriver.chrome.driver","C:\\Users\\Mouli Sarkar\\Documents\\Selenium\\ChromeDriver\\chromedriver.exe");
-
+//to store the file in local
 HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 
 chromePrefs.put("profile.default_content_settings.popups", 0);
@@ -55,21 +55,21 @@ driver.get("https://altoconvertpdftojpg.com/");
 driver.findElement(By.cssSelector("[class*='btn--choose']")).click();
 
 Thread.sleep(3000);
-
+//get the au3 file which contains the code to upload file
 Runtime.getRuntime().exec("C:\\Users\\Mouli Sarkar\\Documents\\Selenium\\fileupload.exe");
 
 WebDriverWait wait=new WebDriverWait(driver,10);
-
+//upload file
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("button[class*='medium']")));
 
 driver.findElement(By.cssSelector("button[class*='medium']")).click();
-
+//download file
 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='output-result__download']/a")));
 
 driver.findElement(By.xpath("//div[@class='output-result__download']/a")).click();
 
 Thread.sleep(5000);
-
+//get file in local path
 File f=new File(downloadPath+"/1.jpg");
 
 if(f.exists())
