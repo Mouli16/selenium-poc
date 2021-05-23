@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import com.google.common.collect.Streams;
 
-public class test1
+public class ArrayListnStreams
 {
     //@Test
 	public void regular ()
