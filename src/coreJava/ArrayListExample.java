@@ -15,6 +15,7 @@ public class ArrayListExample {
 		a.add(1, "weds");  //adding element to arraylist
 		System.out.println(a);
 		a.add("Parijat"); //accepts duplicate values
+		System.out.println(a); 
 		System.out.println(a.contains("Parijat"));
 		System.out.println(a.indexOf("Mouli"));
 		System.out.println(a.isEmpty());
@@ -25,7 +26,7 @@ public class ArrayListExample {
 		System.out.println(b+ " " + c ); 
 		a.remove(0);          //removing element from list
 		a.remove("weds");
-		System.out.println(a);
+		System.out.println(a); 
 		
 
 	}
