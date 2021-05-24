@@ -25,7 +25,10 @@ public class HashmapExample {
         	 System.out.println(mp.getKey());
         	 System.out.println(mp.getValue());
          }
-	}
+	}//difference between hashmap and hashtable
+	//Hashmap is non synchronized and not thread safe; Hashtable is synchronized and thread safe
+	//  Allows one null key and any no of null values ; does not allow null key or null values
+	// object values are iterated using Iterator; Uses enumerator to iterate
 	
 
 }
