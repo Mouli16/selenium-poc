@@ -28,7 +28,7 @@ import java.util.ArrayList;
                            // System.out.println(a[i]); 
                            //System.out.println(k); 
                 		       if(k==1)
-                		    System.out.println(a[i] + " is unique a number"); 
+                		    System.out.println(a[i] + " is a unique number"); 
                                 
                       } 
                  }
