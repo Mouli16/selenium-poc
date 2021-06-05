@@ -59,7 +59,41 @@ public class MaxMinNumber
 		}
 	     
 	}
-	
+	public void findNumber() //finding the maximum number in the column containing the minimum value of the array
+	{
+		int ab[][]= {{2,6,4},{3,4,1},{5,9,8}};
+		
+	int min=ab[0][0];
+	int mincoloumn = 0;
+
+
+	for(int i=0;i<3;i++)
+	    {
+	       for(int j=0;j<3;j++)
+	        {
+	          if(ab[i][j]<min)//2
+	              {
+	                 min=ab[i][j];
+	                 mincoloumn=j;
+	              }
+	         }
+	     }
+	//=1
+	     int max=ab[0][mincoloumn];
+	     int k = 0;
+	     while(k<3)
+	     {
+	       if(ab[k][mincoloumn]>max)
+	         {
+	            max=ab[k][mincoloumn];
+	         }
+	             k++;
+	      }
+
+	          System.out.println("Max number in min value column: " +max);
+	      }
+
+
 	
 
 	public static void main(String[] args) 
@@ -70,6 +104,7 @@ public class MaxMinNumber
 		b.printArray();
 		b.Max();
 		b.Min();
+		b.findNumber();
 
     }
 }
