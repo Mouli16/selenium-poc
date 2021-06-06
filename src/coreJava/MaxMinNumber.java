@@ -1,7 +1,16 @@
 package coreJava;
 
-public class MaxMinNumber 
+public class MaxMinNumber
+
 {
+	public MaxMinNumber()
+	{
+		System.out.println("Super class constructor");
+	}
+	public void getData()
+	{
+		System.out.println("Get data of parent class");
+	}
 	public void Max()
 	{
 		int ab[][]= {{2,6,4},{3,4,1},{5,9,8}};
