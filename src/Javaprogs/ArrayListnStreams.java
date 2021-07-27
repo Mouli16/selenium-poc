@@ -6,10 +6,9 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
-import com.google.common.collect.Streams;
+import com.sun.tools.javac.util.Assert;
 
 public class ArrayListnStreams
 {
@@ -76,7 +75,7 @@ public class ArrayListnStreams
 	 List<String> names1 = Arrays.asList("parijat","priyam","poppy","mouli");
 	 
 	 names.stream().filter(s->s.startsWith("A")).sorted().map(s->s.toUpperCase()).forEach(s->System.out.println(s));
-	 Stream<String> newStream= Streams.concat(names.stream(),names1.stream());
+	 Stream<String> newStream= Stream.concat(names.stream(),names1.stream());
 //	 newStream.sorted().forEach(s->System.out.println(s));
 	boolean flag= newStream.anyMatch(s->s.equalsIgnoreCase("mouli"));
 	System.out.println(flag);
